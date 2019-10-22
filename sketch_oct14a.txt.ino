@@ -37,12 +37,7 @@ void loop(){
 
 //Convert digital value to temperature in Celsius
   Temp=(Voltage*20);                              // Change the multiplier with respect to the temperature range you want
-  Serial.print("Temperature Value: ");
-
-  float temp2 = (AnalogValue-98.59)/9.7601;
-  Serial.print(temp2);
-  Serial.print("------------");
-                                                  // Use line below to convert celsius to fahrenheit if necessary
+  Serial.print("Temperature Value: ");            // Use line below to convert celsius to fahrenheit if necessary
                                                   // Temp = Temp*1.8+32;
   Serial.println(Temp);                           // Prints the Temperature
   delay(1000);                                    // 1 second pause
